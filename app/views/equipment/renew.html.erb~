@@ -1,0 +1,4 @@
+<h1 align = "center"> Renew </h1><br>
+<h4 align = "center">Student ID<br>
+<form>
+<input type="text"> <input type="button" value="Search"> </form></h4>
