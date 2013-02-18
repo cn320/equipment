@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+<<<<<<< HEAD
+  type: 
+  remain: 
+
+two:
+  type: 
+  remain: 
+=======
+  about: MyString
+
+two:
+  about: MyString
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
