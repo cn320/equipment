@@ -2,6 +2,7 @@
 
 one:
 <<<<<<< HEAD
+<<<<<<< HEAD
   type: 
   remain: 
 
@@ -9,8 +10,13 @@ two:
   type: 
   remain: 
 =======
+=======
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
   about: MyString
 
 two:
   about: MyString
+<<<<<<< HEAD
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
+=======
 >>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4

@@ -1,7 +1,15 @@
 class EquipmentController < ApplicationController
+<<<<<<< HEAD
 
   def index
     @equipments = Equipment.all
+=======
+  # GET /equipment
+  # GET /equipment.json
+  def index
+    @equipment = Equipment.all
+
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
   end
 
   def about
@@ -13,7 +21,12 @@ class EquipmentController < ApplicationController
   def renew
 
   end
+<<<<<<< HEAD
 
+=======
+  # GET /equipment/1
+  # GET /equipment/1.json
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
   def show
     @equipment = Equipment.find(params[:id])
 

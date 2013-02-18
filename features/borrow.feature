@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 Feature : Borrow a device
 
@@ -22,6 +23,8 @@ Scenario: add studentID to existing equipment
 
 
 =======
+=======
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
 Feature: display list of movies filtered by MPAA rating
  
   As a concerned parent
@@ -54,4 +57,7 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
 
 Scenario: all ratings selected
   # see assignment
+<<<<<<< HEAD
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
+=======
 >>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4

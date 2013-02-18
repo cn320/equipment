@@ -7,7 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 equipments = [{:name => "Aladdin", :remain => "20"},{:name => "ssss", :remain => "10"}]
+=======
+equipments = [{:type => 'Aladdin', :remain => '20'},{:type => 'ssss', :remain => '10'}]
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
 
 equipments.each do |equipment|
   Equipment.create!(equipment)
