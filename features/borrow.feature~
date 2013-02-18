@@ -1,4 +1,9 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 70546c391dc8153029d272413585977de5874b10
+
 Feature : Borrow a device
 
 As a Teacher and Student
@@ -18,7 +23,13 @@ Scenario: add studentID to existing equipment
   And I fill in "studentID" with "5310611115"
   And I press "Borrow"
   Then the student of "Resistor 300" should be "53106111115"
+
+
+<<<<<<< HEAD
 =======
+=======
+=======
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
 Feature: display list of movies filtered by MPAA rating
  
   As a concerned parent
@@ -51,4 +62,8 @@ Scenario: restrict to movies with 'PG' or 'R' ratings
 
 Scenario: all ratings selected
   # see assignment
+<<<<<<< HEAD
 >>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
+=======
+>>>>>>> f1f481f1ceceb723ed1de0ecc117fcc33952bda4
+>>>>>>> 70546c391dc8153029d272413585977de5874b10

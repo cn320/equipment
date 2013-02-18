@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
 equipments = [{:name => "Aladdin", :remain => "20"},{:name => "ssss", :remain => "10"}]
 
 equipments.each do |equipment|

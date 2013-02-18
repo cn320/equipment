@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(:version => 20130212074135) do
     t.integer  "remain"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+
   end
 
 end
