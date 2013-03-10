@@ -1,25 +1,36 @@
-%table{:Border => "1", :align => "center", :width => "80%"}
-  %tr
-    %td{:align => "left", :colspan => "2"}
-      %h1 All devices
-  %tr
-    %td
-      %h2 Type
-    %td
-      %h2 Remaining
-%br
-  %h3{:align => "center"}
-    Borrowing
-    %br
-      Recurring
-      %br
-        Renew
-        %br
-          = link_to'About' ,about_path
-          %br
-            Search
-            %br
-              %form
-                Std ID
-                %input{:type => "text"}
-                  %input{:type => "button", :value => "Search"}               %br/
+%body
+%h3{:align => "center"}
+  All Dv
+%table{:align => "center",:border=> "1"}
+  %thead
+    %tr
+      %th NameDv
+      %th Remain
+  %tbody
+    - @equipments.each do |a|
+      %tr
+        %td= a.name 
+        %td= a.remain
+
+
+
+%br/
+%h3{:align => "center"}
+  Borrowing
+ 
+  = link_to'Recurring' ,recurring_path
+ 
+  = link_to'Renew' ,renew_path
+  
+  = link_to'About' ,about_path
+  
+  AddDV
+  %br/
+  %br/
+  Search
+  %br/
+  %form
+    Std ID
+    %input{:type => "text"}/
+    %input{:type => "button", :value => "Search"}/
+  %br/

@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-equipments = [{:name => "Aladdin", :remain => "20"},{:name => "ssss", :remain => "10"}]
+devioces = [{:code =>"001", :name => "Aladdin", :remain => "20"},{:code =>"002",:name => "ssss", :remain => "10"}]
 
-equipments.each do |equipment|
-  Equipment.create!(equipment)
+devioces.each do |devioce|
+  Devioces.create!(devioce)
 end

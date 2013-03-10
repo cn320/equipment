@@ -1,13 +1,13 @@
-
-%table{:align => "center", :border => "1", :width => "80%"}
+%body
+%h3{:align => "center"}
+  All Dv
+%table{:align => "center",:border=> "1"}
   %thead
     %tr
-      %th{:align => "left", :colspan => "2"} All
-    %tr
-      %th name
+      %th NameDv
       %th Remain
   %tbody
-    - @equipments.each do |a|
+    - @devioces.each do |a|
       %tr
         %td= a.name 
         %td= a.remain
@@ -17,12 +17,17 @@
 %br/
 %h3{:align => "center"}
   Borrowing
-  %br/
+ 
   = link_to'Recurring' ,recurring_path
-  %br/
+ 
   = link_to'Renew' ,renew_path
-  %br/
+  
   = link_to'About' ,about_path
+  
+  AddDV
+  
+  Time
+  %br/
   %br/
   Search
   %br/

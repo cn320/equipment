@@ -1,3 +1,3 @@
 class Equipment < ActiveRecord::Base
-  attr_accessible :remain, :name
+  attr_accessible :code,:remain, :name
 end

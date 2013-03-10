@@ -1,0 +1,25 @@
+table
+{ 
+  width: 80%;
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+}
+td,tr
+{
+  border: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: pink;
+}
+a:visited
+{
+	color: blue;
+}
+
+a:hover
+{
+	color: red;
+}
+
+	

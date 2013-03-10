@@ -1,7 +1,7 @@
 class EquipmentController < ApplicationController
 
   def index
-    @equipments = Equipment.all
+    @devioces = Devioce.all
   end
 
   def about
