@@ -41,8 +41,10 @@ class EquipmentController < ApplicationController
           :remain => params[:dvremain]
         if @adddv.save
           flash[:tice] = "Success"
+          session[:login]="true"
         else
           flash[:tice] = "fail"
+          session[:login]="true"
         end        
     else
       if session[:login]=="true"
@@ -76,7 +78,14 @@ class EquipmentController < ApplicationController
   def time
     @students = Student.all
   end
-  
+
+  def students
+   if session[:login]=="true"
+     @students = Student.all
+   else
+     redirect_to :action=>'login'
+    end
+  end
 
   def reneweq
    if request.post?  
@@ -134,8 +143,14 @@ class EquipmentController < ApplicationController
     @d = Devioce.find(params[:id])
     @d.destroy
     redirect_to :action=>'devices'
+  end
+  def deletestudent
+    @s = Student.find(params[:id])
+    @s.destroy
+    redirect_to :action=>'students'
 
   end
+
 
   def devices
       if session[:login]=="true"
@@ -144,4 +159,15 @@ class EquipmentController < ApplicationController
         redirect_to :action=>'login'
       end
   end
+  def editdv
+    @device = Devioce.find(params[:id])
+  end
+
+  def updatedv
+    @device = Devioce.find params[:id]
+    @device.update_attributes!(params[:device])
+    redirect_to :action=>'devices'
+  end
+
+
 end

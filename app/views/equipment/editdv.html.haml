@@ -1,0 +1,22 @@
+%h2{:align => "center"}Device
+=form_tag equipment_updatedv_path(:id=>@device.id), :method => :put do
+ %table{:align => "center"}
+  %tr
+   %td
+    = label :device, :code, 'DeviceCode'
+   %td  
+    = text_field :device, 'code'
+  %tr
+   %td
+    = label :device, :name, 'DeviceName'
+   %td
+    = text_field :device, 'name'
+  %tr
+   %td
+    = label :device, :remain, 'DeviceRemain'
+   %td
+    = text_field :device, 'remain'
+  %tr
+   %td{:colspan =>"2",:align =>"center"}
+    = submit_tag 'Update Device'
+%h3{:align => "center"}=link_to "Back",'/equipment/devices'

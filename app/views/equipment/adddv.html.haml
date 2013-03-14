@@ -20,12 +20,12 @@
     %input{:type => "text",:name => "dvremain"}/
   %tr
    %td{:colspan =>"2",:align =>"center"}
-    =link_to'Show Devices','/equipment/devices'
-  %tr
-   %td{:colspan =>"2",:align =>"center"}
     %input{:type => "submit", :value => "save"}/
   %tr
    %td{:align =>"center"}
-    = link_to'logout','/equipment/logout'
+    =link_to'Show Devices','/equipment/devices'
    %td{:align =>"center"}
-    = link_to'Back','/equipment'
+    =link_to'Show students','/equipment/students'
+  %tr
+   %td{:colspan =>"2",:align =>"center"}
+    = link_to'Back','/equipment/logout'
