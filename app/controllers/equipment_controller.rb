@@ -56,7 +56,7 @@ class EquipmentController < ApplicationController
   def borrow
    if request.post? 
      @device = Devioce.find_by_code_and_name params[:iddv],params[:namedv]
-     if @device
+     if @device && @device.remain>0 
        @borrow = Student.new :stdid=>params[:stdidd],
        :stdname=>params[:stdnamee],
        :dvid =>params[:iddv],

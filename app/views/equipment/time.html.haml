@@ -9,6 +9,7 @@
       %th DeviceName
       %th Date
       %th ToDate
+      %th RecallDate
   %tbody
     - @students.each do |s|
       %tr
@@ -18,6 +19,7 @@
         %td= s.dvname
         %td= s.date
         %td= s.todate
+        %td= s.recalldate
 %h3{:align => "center"}
   = link_to 'Back', equipment_index_path
 
