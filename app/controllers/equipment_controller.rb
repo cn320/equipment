@@ -130,5 +130,18 @@ class EquipmentController < ApplicationController
    end
   end
 
-  
+  def delete
+    @d = Devioce.find(params[:id])
+    @d.destroy
+    redirect_to :action=>'devices'
+
+  end
+
+  def devices
+      if session[:login]=="true"
+        @devioces = Devioce.all
+      else
+        redirect_to :action=>'login'
+      end
+  end
 end

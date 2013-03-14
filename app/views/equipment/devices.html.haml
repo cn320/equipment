@@ -1,0 +1,18 @@
+%h2{:align => "center"}
+  All Devioce
+%table{:align => "center",:border=> "1"}
+  %thead
+    %tr
+      %th IdDevice
+      %th NameDevice
+      %th Remain
+      %th Delete
+  %tbody
+    - @devioces.each do |a|
+      %tr
+        %td= a.code
+        %td= a.name 
+        %td= a.remain
+        %td=link_to "Delete",equipment_delete_path(:id=>a.id), :confirm => 'Are you sure?'
+
+%h3{:align => "center"}=link_to "Back",'/equipment/adddv'

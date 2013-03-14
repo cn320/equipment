@@ -19,10 +19,13 @@
    %td
     %input{:type => "text",:name => "dvremain"}/
   %tr
-   %td
+   %td{:colspan =>"2",:align =>"center"}
+    =link_to'Show Devices','/equipment/devices'
+  %tr
+   %td{:colspan =>"2",:align =>"center"}
     %input{:type => "submit", :value => "save"}/
   %tr
-   %td
+   %td{:align =>"center"}
     = link_to'logout','/equipment/logout'
-   %td
+   %td{:align =>"center"}
     = link_to'Back','/equipment'

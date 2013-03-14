@@ -14,6 +14,8 @@ Equipmentroom::Application.routes.draw do
   match 'equipment/recurr'
   match 'equipment/recurritem'
   match 'equipment/search'
+  match 'equipment/devices'
+  match 'equipment/delete'
   resources :equipment
 
   # The priority is based upon order of creation:
