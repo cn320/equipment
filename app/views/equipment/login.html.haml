@@ -1,10 +1,18 @@
-= link_to 'Back', equipment_index_path
+%h2{:align => "center"}Login Admin
 %form{:action=>'/equipment/chklogin',:method=>"POST"}
-  ID
-  %input{:type => "text",:name => "id"}/
-  %br
-  Password
-  %input{:type => "password",:name => "password"}/
-  %br
-  %input{:type => "submit", :value => "Login"}/
-%br/
+ %table{:align => "center"}
+  %tr
+   %td
+    ID
+   %td
+    %input{:type => "text",:name => "id"}/
+  %tr
+   %td
+    Password
+   %td
+    %input{:type => "password",:name => "password"}/
+  %tr
+   %td
+    %input{:type => "submit", :value => "Login"}/
+   %td
+    = link_to 'Back', equipment_index_path

@@ -118,4 +118,17 @@ class EquipmentController < ApplicationController
      redirect_to :action=>'recurring'
   end
 
+  def search
+    if request.post?  
+     @students = Student.find(:all,:conditions=>["stdid is ?","#{params[:idstd]}"])
+     if @students==[] 
+      flash[:ss]="Fail"
+      redirect_to :action=>'index'
+     else
+       flash[:ss]="Success"
+     end
+   end
+  end
+
+  
 end

@@ -1,14 +1,28 @@
-= flash[:tice]
+
+%h2{:align => "center"}All Device
+%h3{:align => "center"}= flash[:tice]
 %form{:action=>'/equipment/adddv',:method=>"POST"}
-  DevioceID
-  %input{:type => "text",:name => "iddv"}/
-  %br
-  DevioceName
-  %input{:type => "text",:name => "dvname"}/
-  %br
-  Remain
-  %input{:type => "text",:name => "dvremain"}/
-  %br
-  %input{:type => "submit", :value => "save"}/
-%br/
-= link_to'logout','/equipment/logout'
+ %table{:align => "center"}
+  %tr
+   %td
+    DeviceID
+   %td
+    %input{:type => "text",:name => "iddv"}/
+  %tr
+   %td
+    DeviceName
+   %td
+    %input{:type => "text",:name => "dvname"}/
+  %tr
+   %td
+    Remain
+   %td
+    %input{:type => "text",:name => "dvremain"}/
+  %tr
+   %td
+    %input{:type => "submit", :value => "save"}/
+  %tr
+   %td
+    = link_to'logout','/equipment/logout'
+   %td
+    = link_to'Back','/equipment'

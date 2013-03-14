@@ -1,11 +1,11 @@
 %body
-%h3{:align => "center"}
+%h2{:align => "center"}
   All Devioce
 %table{:align => "center",:border=> "1"}
   %thead
     %tr
-      %th IdDevioce
-      %th NameDevioce
+      %th IdDevice
+      %th NameDevice
       %th Remain
   %tbody
     - @devioces.each do |a|
@@ -24,13 +24,13 @@
   = link_to'Renew' ,'/equipment/renew'
   = link_to'About' ,'/equipment/about' 
   = link_to'Add_Dv' ,'/equipment/login'
-  = link_to'Time','/equipment/time'
+  
   %br/
   %br/
   Search
   %br/
-  %form
+  %form{:action=>'/equipment/search',:method=>"POST"}
     Std ID
-    %input{:type => "text"}/
-    %input{:type => "button", :value => "Search"}/
+    %input{:type => "text", :name =>"idstd"}/
+    %input{:type => "submit", :value => "Search"}/
   %br/
