@@ -1,0 +1,24 @@
+%h3{:align => "center"}
+  All Student
+%table{:align => "center",:border=> "1"}
+  %thead
+    %tr
+      %th StudentId
+      %th StudentName
+      %th DevioceId
+      %th DevioceName
+      %th Date
+      %th ToDate
+  %tbody
+    - @students.each do |s|
+      %tr
+        %td= s.stdid
+        %td= s.stdname
+        %td= s.dvid
+        %td= s.dvname
+        %td= s.date
+        %td= s.todate
+%h3{:align => "center"}
+  = link_to 'Back', equipment_index_path
+
+        

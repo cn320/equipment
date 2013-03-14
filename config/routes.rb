@@ -1,8 +1,18 @@
 Equipmentroom::Application.routes.draw do
 
-  match 'equipment/about' => 'equipment#about', :as => :about
-  match 'equipment/recurring' => 'equipment#recurring', :as => :recurring, :via => :get
-  match 'equipment/renew' => 'equipment#renew', :as => :renew, :via => :get
+  match 'equipment/about' 
+  match 'equipment/recurring' 
+  match 'equipment/renew' 
+  match 'equipment/adddv'
+  match 'equipment/login'
+  match 'equipment/chklogin'
+  match 'equipment/logout'
+  match 'equipment/borrow'
+  match 'equipment/time'
+  match 'equipment/reneweq'
+  match 'equipment/retime'
+  match 'equipment/recurr'
+  match 'equipment/recurritem'
   resources :equipment
 
   # The priority is based upon order of creation:
@@ -54,7 +64,7 @@ Equipmentroom::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  # root :to => 'equipment'
 
   # See how all your routes lay out with "rake routes"
 

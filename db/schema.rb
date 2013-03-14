@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130310165122) do
+ActiveRecord::Schema.define(:version => 20130314125503) do
 
   create_table "devioces", :force => true do |t|
     t.integer  "code"
@@ -26,6 +26,18 @@ ActiveRecord::Schema.define(:version => 20130310165122) do
     t.integer  "remain"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "students", :force => true do |t|
+    t.integer  "stdid"
+    t.string   "stdname"
+    t.integer  "dvid"
+    t.string   "dvname"
+    t.datetime "date"
+    t.datetime "todate"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.string   "recalldate"
   end
 
 end

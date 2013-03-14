@@ -7,7 +7,7 @@
       %th NameDv
       %th Remain
   %tbody
-    - @equipments.each do |a|
+    - @devioces.each do |a|
       %tr
         %td= a.name 
         %td= a.remain
@@ -24,7 +24,9 @@
   
   = link_to'About' ,about_path
   
-  AddDV
+  = link_to'Add_Dv' ,'equipment/login'
+  
+  Time
   %br/
   %br/
   Search

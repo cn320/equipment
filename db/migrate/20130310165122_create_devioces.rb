@@ -1,7 +1,7 @@
 class CreateDevioces < ActiveRecord::Migration
   def change
     create_table :devioces do |t|
-      t.integer :code
+      t.string :code
       t.string :name
       t.integer :remain
 

@@ -1,0 +1,14 @@
+%h1 Create New Devioce
+
+= form_tag movies_path do
+
+  = label :devioce, :code, 'DevioceID'
+  = text_field :devioce, 'dvid'
+
+  = label :devioce, :name, 'DevioceName'
+  = text_field :devioce, :name
+
+  = label :devioce, :remain, 'Remain'
+  = text_field :devioce, :remain
+
+  = submit_tag 'Save Changes'

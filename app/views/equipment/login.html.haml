@@ -1,0 +1,10 @@
+= link_to 'Back', equipment_index_path
+%form{:action=>'/equipment/chklogin',:method=>"POST"}
+  ID
+  %input{:type => "text",:name => "id"}/
+  %br
+  Password
+  %input{:type => "password",:name => "password"}/
+  %br
+  %input{:type => "submit", :value => "Login"}/
+%br/

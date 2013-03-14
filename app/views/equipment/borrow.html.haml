@@ -1,0 +1,30 @@
+%h3{:align => "center"}=flash[:borrow]
+
+%form{:action=>'/equipment/borrow',:method=>"POST"}
+ %table{:align => "center"}
+  %tr
+   %td 
+    StudentID
+   %td  
+    %input{:type => "text",:name => "stdidd"}/
+  %tr
+   %td
+    StudentName
+   %td
+    %input{:type => "text",:name => "stdnamee"}/
+  %tr
+   %td
+    DevioceID
+   %td
+    %input{:type => "text",:name => "iddv"}/
+  %tr
+   %td
+    DevioceName
+   %td
+    %input{:type => "text",:name => "namedv"}/
+  %tr
+   %td
+    %input{:type => "submit", :value => "save"}/
+   
+
+%h3{:align => "center"}= link_to 'Back', equipment_index_path

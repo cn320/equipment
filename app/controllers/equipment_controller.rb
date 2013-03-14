@@ -11,75 +11,111 @@ class EquipmentController < ApplicationController
   
   end
   def renew
-
-  end
-  def show
-    @equipment = Equipment.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @equipment }
-    end
-  end
-
-  # GET /equipment/new
-  # GET /equipment/new.json
-  def new
-    @equipment = Equipment.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @equipment }
-    end
-  end
-
-  # GET /equipment/1/edit
-  def edit
-    @equipment = Equipment.find(params[:id])
-  end
-
-  # POST /equipment
-  # POST /equipment.json
-  def create
-    @equipment = Equipment.new(params[:equipment])
-
-    respond_to do |format|
-      if @equipment.save
-        format.html { redirect_to @equipment, notice: 'Equipment was successfully created.' }
-        format.json { render json: @equipment, status: :created, location: @equipment }
-      else
-        format.html { render action: "new" }
-        format.json { render json: @equipment.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # PUT /equipment/1
-  # PUT /equipment/1.json
-  def update
-    @equipment = Equipment.find(params[:id])
-
-    respond_to do |format|
-      if @equipment.update_attributes(params[:equipment])
-        format.html { redirect_to @equipment, notice: 'Equipment was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @equipment.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /equipment/1
-  # DELETE /equipment/1.json
-  def destroy
-    @equipment = Equipment.find(params[:id])
-    @equipment.destroy
-
-    respond_to do |format|
-      format.html { redirect_to equipment_index_url }
-      format.json { head :no_content }
-    end
+   
   end
   
+  def login
+    
+  end
+
+  def chklogin
+    if params[:id]=="admin"&& params[:password]=="root"
+      flash[:notice]="Success"
+      session[:login]="true"
+      redirect_to :action=>'adddv'
+    else
+       flash[:notice]="Fail"
+    end
+
+  end
+
+  def logout
+    reset_session
+    redirect_to :action=>'login'
+  end
+
+  def adddv
+    if request.post? 
+        @adddv=Devioce.new :code=>params[:iddv],
+          :name => params[:dvname],
+          :remain => params[:dvremain]
+        if @adddv.save
+          flash[:tice] = "Success"
+        else
+          flash[:tice] = "fail"
+        end        
+    else
+      if session[:login]=="true"
+
+      else
+        redirect_to :action=>'login'
+      end
+    end
+  end
+
+  def borrow
+   if request.post? 
+     @device = Devioce.find_by_code_and_name params[:iddv],params[:namedv]
+     if @device
+       @borrow = Student.new :stdid=>params[:stdidd],
+       :stdname=>params[:stdnamee],
+       :dvid =>params[:iddv],
+       :dvname=>params[:namedv],
+       :date=>Time.now,
+       :todate=>Time.now+(60*60*24*7)
+      if @borrow.save
+        flash[:borrow] = "Success"
+        @device.update_attribute(:remain,@device.remain-1)
+      end
+     else
+       flash[:borrow] = "Fail"
+     end
+   end
+  end
+  
+  def time
+    @students = Student.all
+  end
+  
+
+  def reneweq
+   if request.post?  
+     @students = Student.find(:all,:conditions=>["stdid LIKE ? and recalldate is ?","#{params[:idstd]}",nil])
+     if @students==[]
+      flash[:ok]="Fail"
+      redirect_to :action=>'renew'
+     else
+       flash[:ok]="Success"
+     end
+   end
+
+  end
+
+  def retime
+    @s = Student.find_by_id params[:id]
+    @s.update_attribute(:todate,Time.now+(60*60*24*7))                                                            
+    redirect_to :action=>'renew'
+   
+  end
+     
+  def recurr
+    if request.post?  
+     @students = Student.find(:all,:conditions=>["stdid is ? and recalldate is ?","#{params[:idstd]}",nil])
+     if @students==[] 
+      flash[:ok]="Fail"
+      redirect_to :action=>'recurring'
+     else
+       flash[:ok]="Success"
+     end
+   end
+  end
+  
+  def recurritem
+     @s = Student.find_by_id params[:id]
+     @device = Devioce.find_by_code_and_name @s.dvid,@s.dvname
+     @s.update_attribute(:recalldate,Time.now) 
+     @device.update_attribute(:remain,@device.remain+1)
+     redirect_to :action=>'recurring'
+  end
+
 end

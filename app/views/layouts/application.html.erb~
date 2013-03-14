@@ -7,7 +7,7 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<table align ="center"> <%= image_tag("header.jpg") %></table>
+<h1 align ="center"> <%= image_tag("header.jpg") %></h1>
 <%= yield %>
 
 </body>

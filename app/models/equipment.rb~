@@ -1,5 +1,5 @@
 class Equipment < ActiveRecord::Base
-
-  attr_accessible :remain, :name
-
+  attr_accessible :date, :dvid, :dvname, :stdid, :stdname, :todate
+  validates :stdid, :numericality => { :only_integer => true }
+  validates :dvid, :numericality => { :only_integer => true }
 end

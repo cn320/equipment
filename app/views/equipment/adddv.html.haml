@@ -1,0 +1,14 @@
+= flash[:tice]
+%form{:action=>'/equipment/adddv',:method=>"POST"}
+  DevioceID
+  %input{:type => "text",:name => "iddv"}/
+  %br
+  DevioceName
+  %input{:type => "text",:name => "dvname"}/
+  %br
+  Remain
+  %input{:type => "text",:name => "dvremain"}/
+  %br
+  %input{:type => "submit", :value => "save"}/
+%br/
+= link_to'logout','/equipment/logout'

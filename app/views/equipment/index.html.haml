@@ -1,32 +1,30 @@
 %body
 %h3{:align => "center"}
-  All Dv
+  All Devioce
 %table{:align => "center",:border=> "1"}
   %thead
     %tr
-      %th NameDv
+      %th IdDevioce
+      %th NameDevioce
       %th Remain
   %tbody
     - @devioces.each do |a|
       %tr
+        %td= a.code
         %td= a.name 
         %td= a.remain
 
 
 
 %br/
+
 %h3{:align => "center"}
-  Borrowing
- 
-  = link_to'Recurring' ,recurring_path
- 
-  = link_to'Renew' ,renew_path
-  
-  = link_to'About' ,about_path
-  
-  AddDV
-  
-  Time
+  = link_to'Borrowing' ,'/equipment/borrow'
+  = link_to'Recurring' ,'/equipment/recurring' 
+  = link_to'Renew' ,'/equipment/renew'
+  = link_to'About' ,'/equipment/about' 
+  = link_to'Add_Dv' ,'/equipment/login'
+  = link_to'Time','/equipment/time'
   %br/
   %br/
   Search
