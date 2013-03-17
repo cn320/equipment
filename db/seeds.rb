@@ -7,8 +7,14 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-devioces = [{:code =>"001", :name => "Aladdin", :remain => "20"},{:code =>"002",:name => "ssss", :remain => "10"}]
+devioces = [{:code =>"1", :name => "r100", :remain => "20"},{:code =>"2",:name => "c", :remain => "10"}]
 
 devioces.each do |devioce|
   Devioces.create!(devioce)
+end
+
+students = [{:stdid =>"5310611115",:stdname=>"Warut",:dvid=>"1",:dvname=>"r100",:date=>'12-Jun-1922',:todate=>'17-Jun-1922',:recalldate=>'15-Jun-1922'}]
+
+students.each do |student|
+  Students.create!(student)
 end
