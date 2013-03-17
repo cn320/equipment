@@ -122,7 +122,7 @@ class EquipmentController < ApplicationController
   
   def recurritem
      @s = Student.find_by_id(params[:id])
-     @device = Devioce.find_by_code_and_name @s.dvid,@s.dvname
+     @device = Devioce.find_by_code_and_name(@s.dvid,@s.dvname)
      @s.update_attribute(:recalldate,Time.now) 
      @device.update_attribute(:remain,@device.remain+1)
      flash[:os]="Success"
