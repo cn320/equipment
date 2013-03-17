@@ -101,7 +101,7 @@ class EquipmentController < ApplicationController
   end
 
   def retime
-    @s = Student.find_by_id params[:id]
+    @s = Student.find_by_id(params[:id])
     @s.update_attribute(:todate,Time.now+(60*60*24*7))
     flash[:ok]="Success"                                                            
     redirect_to :action=>'renew'
@@ -121,7 +121,7 @@ class EquipmentController < ApplicationController
   end
   
   def recurritem
-     @s = Student.find_by_id params[:id]
+     @s = Student.find_by_id(params[:id])
      @device = Devioce.find_by_code_and_name @s.dvid,@s.dvname
      @s.update_attribute(:recalldate,Time.now) 
      @device.update_attribute(:remain,@device.remain+1)
