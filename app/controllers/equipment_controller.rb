@@ -128,7 +128,6 @@ class EquipmentController < ApplicationController
   end
 
   def search
-    if request.post?  
      @students = Student.find(:all,:conditions=>["stdid is ?","#{params[:idstd]}"])
      if @students==[] 
       flash[:ss]="Fail"
@@ -136,7 +135,6 @@ class EquipmentController < ApplicationController
      else
        flash[:ss]="Success"
      end
-   end
   end
 
   def delete
