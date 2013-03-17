@@ -128,13 +128,15 @@ class EquipmentController < ApplicationController
   end
 
   def search
-     @students = Student.find(:all,:conditions=>["stdid is ?","#{params[:idstd]}"])
+    if request.post? 
+     @students = Student.find_all_by_stdid(params[:idstd])
      if @students==[] 
       flash[:ss]="Fail"
       redirect_to :action=>'index'
      else
        flash[:ss]="Success"
      end
+    end 
   end
 
   def delete
