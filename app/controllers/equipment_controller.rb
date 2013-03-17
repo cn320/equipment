@@ -89,7 +89,7 @@ class EquipmentController < ApplicationController
 
   def reneweq
    if request.post?  
-     @students = Student.find(:all,:conditions=>["stdid LIKE ? and recalldate is ?","#{params[:idstd]}",nil])
+     @students = Student.find_all_by_stdid_and_recalldate(params[:idstd],nil)
      if @students==[]
       flash[:ok]="Fail"
       redirect_to :action=>'renew'
@@ -102,19 +102,20 @@ class EquipmentController < ApplicationController
 
   def retime
     @s = Student.find_by_id params[:id]
-    @s.update_attribute(:todate,Time.now+(60*60*24*7))                                                            
+    @s.update_attribute(:todate,Time.now+(60*60*24*7))
+    flash[:ok]="Success"                                                            
     redirect_to :action=>'renew'
    
   end
      
   def recurr
     if request.post?  
-     @students = Student.find(:all,:conditions=>["stdid is ? and recalldate is ?","#{params[:idstd]}",nil])
+      @students = Student.find_all_by_stdid_and_recalldate(params[:idstd],nil)
      if @students==[] 
-      flash[:ok]="Fail"
+      flash[:os]="Fail"
       redirect_to :action=>'recurring'
      else
-       flash[:ok]="Success"
+       flash[:os]="Success"
      end
    end
   end
@@ -124,6 +125,7 @@ class EquipmentController < ApplicationController
      @device = Devioce.find_by_code_and_name @s.dvid,@s.dvname
      @s.update_attribute(:recalldate,Time.now) 
      @device.update_attribute(:remain,@device.remain+1)
+     flash[:os]="Success"
      redirect_to :action=>'recurring'
   end
 
