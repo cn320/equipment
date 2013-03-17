@@ -123,8 +123,6 @@ class EquipmentController < ApplicationController
   def recurritem
      @s = Student.find_by_id(params[:id])
      @s.update_attribute(:recalldate,Time.now) 
-     @device = Devioce.find_by_code(@s.dvid)
-     @device.update_attribute(:remain,@device.remain+1)
      flash[:os]="Success"
      redirect_to :action=>'recurring'
   end
