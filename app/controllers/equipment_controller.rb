@@ -94,7 +94,7 @@ class EquipmentController < ApplicationController
       flash[:ok]="Fail"
       redirect_to :action=>'renew'
      else
-       flash[:ok]="Success"
+       
      end
    end
 
@@ -115,7 +115,7 @@ class EquipmentController < ApplicationController
       flash[:os]="Fail"
       redirect_to :action=>'recurring'
      else
-       flash[:os]="Success"
+       
      end
    end
   end
