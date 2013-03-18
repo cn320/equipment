@@ -3,7 +3,7 @@ Feature: Search a borrower information
   So that I can search the information of borrower
   I want to get the information of borrower
 
-Scenario: find equipment with studentID
+Scenario: add Device and add Borrow and find student with studentID
   Given I am on the login page
   When I fill in "id" with "admin"
   And I fill in "password" with "root"

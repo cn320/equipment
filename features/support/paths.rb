@@ -22,7 +22,15 @@ module NavigationHelpers
     when /^the add device\s?page$/
       '/equipment/adddv'  
     when /^the search\s?page$/
-      '/equipment/search'   
+      '/equipment/search' 
+    when /^the recurring\s?page$/
+      '/equipment/recurring'
+    when /^the return\s?page$/
+      '/equipment/recurr'
+    when /^the renewdevice\s?page$/
+      '/equipment/reneweq'
+    when /^the renew\s?page$/
+      '/equipment/renew'  
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
