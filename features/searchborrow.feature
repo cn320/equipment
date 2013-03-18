@@ -1,21 +1,37 @@
 Feature: Search a borrower information
-
-As a Teacher and Student
-So that I can search the information of borrower
-I want to get the information of borrower
-
-Given the following movies exist:
-  | studentID | release_date | type |
-  | 5310611115| 2012-05-25 | Resistor 300 |
-  | 5310611115| 2013-06-21 | Resistor 200 |
-  | 5310611321| 2013-07-23 | Resistor 100 |
+  As a Teacher and Student
+  So that I can search the information of borrower
+  I want to get the information of borrower
 
 Scenario: find equipment with studentID
-  Given I am on the Home page
-  When I follow "Find studentID"
-  Then I fill in "seach" with "5310611115"
-  And I should be on the searchID page for "5310611115"
-  And I should see " Resistor 300 "
-  And I should see " Resistor 200 "
-  But I should not see " Resistor 100”
+  Given I am on the login page
+  When I fill in "id" with "admin"
+  And I fill in "password" with "root"
+  And I press "Login"
+  Then I should be on the add device page
+  And I fill in "iddv" with "300"
+  And I fill in "dvname" with "Resister"
+  And I fill in "dvremain" with "40"
+  And I press "save"
+  Then I should be on the add device page
+  And I should see "Success"
+  Then I am on the borrower page
+  When I fill in "stdidd" with "5310611115"
+  And I fill in "stdnamee" with "nook"
+  And I fill in "iddv" with "300"
+  And I fill in "namedv" with "Resister"
+  And I press "save"
+  Then I should be on the borrower page
+  And I should see "Success"
+  Then I am on the home page
+  When I fill in "idstd" with "5310611115"
+  And I press "Search"
+  Then I should be on the search page
+ 
+
 Scenario: can't find equipment with studentID
+  Given I am on the home page
+  When I fill in "idstd" with "5310611321"
+  And I press "Search"
+  Then I should be on the home page
+  And I should see "Fail"

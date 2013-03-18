@@ -136,7 +136,7 @@ class EquipmentController < ApplicationController
       flash[:ss]="Fail"
       redirect_to :action=>'index'
      else
-       flash[:ss]="Success"
+      
      end
     end 
   end
