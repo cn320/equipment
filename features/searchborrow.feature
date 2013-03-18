@@ -1,4 +1,4 @@
-Feature : Search a borrower information
+Feature: Search a borrower information
 
 As a Teacher and Student
 So that I can search the information of borrower
