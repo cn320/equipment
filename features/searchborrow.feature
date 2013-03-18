@@ -29,7 +29,7 @@ Scenario: add Device and add Borrow and find student with studentID
   Then I should be on the search page
  
 
-Scenario: can't find equipment with studentID
+Scenario: can't find student  with studentID
   Given I am on the home page
   When I fill in "idstd" with "5310611321"
   And I press "Search"
