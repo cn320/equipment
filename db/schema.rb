@@ -14,14 +14,7 @@
 ActiveRecord::Schema.define(:version => 20130314125503) do
 
   create_table "devioces", :force => true do |t|
-    t.integer  "code"
-    t.string   "name"
-    t.integer  "remain"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  create_table "equipment", :force => true do |t|
+    t.string   "code"
     t.string   "name"
     t.integer  "remain"
     t.datetime "created_at", :null => false
