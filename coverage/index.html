@@ -21,21 +21,21 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-21T23:09:07+07:00">2013-03-21T23:09:07+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-21T23:50:54+07:00">2013-03-21T23:50:54+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="red">39.86%</span>)
+    (<span class="green">100.0%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>148</b> relevant lines. 
-    <span class="green"><b>59</b> lines covered</span> and
-    <span class="red"><b>89</b> lines missed </span>
+    <b>38</b> relevant lines. 
+    <span class="green"><b>38</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -51,30 +51,30 @@
     <tbody>
       
       <tr>
-        <td><a href="#bee780950696a9e18929011fca22753e99ffe099" class="src_link" title="./features/step_definitions/web_steps.rb">./features/step_definitions/web_steps.rb</a></td>
-        <td class="red">35.25 %</td>
-        <td>254</td>
-        <td>122</td>
-        <td>43</td>
-        <td>79</td>
+        <td><a href="#554facd255550ac98428c91b82f0f1dd2b56a665" class="src_link" title="./features/step_definitions/web_steps.rb">./features/step_definitions/web_steps.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>68</td>
+        <td>22</td>
+        <td>22</td>
+        <td>0</td>
       </tr>
       
       <tr>
-        <td><a href="#56075c11a4f9af39fd399f7a37d338e212f76bf6" class="src_link" title="./features/support/paths.rb">./features/support/paths.rb</a></td>
-        <td class="red">68.42 %</td>
-        <td>53</td>
-        <td>19</td>
-        <td>13</td>
-        <td>6</td>
-      </tr>
-      
-      <tr>
-        <td><a href="#bf7b01bc994a645e0ef5e6a50349e48d19d542c8" class="src_link" title="./features/support/selectors.rb">./features/support/selectors.rb</a></td>
-        <td class="red">42.86 %</td>
+        <td><a href="#639231af4280d3804fec00e8dd37d8c8db3fd87d" class="src_link" title="./features/support/paths.rb">./features/support/paths.rb</a></td>
+        <td class="green">100.0 %</td>
         <td>44</td>
-        <td>7</td>
+        <td>13</td>
+        <td>13</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
+        <td><a href="#26b6faea8ef1a4fffdf5b3b9d240d78c15660e90" class="src_link" title="./features/support/selectors.rb">./features/support/selectors.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>34</td>
         <td>3</td>
-        <td>4</td>
+        <td>3</td>
+        <td>0</td>
       </tr>
       
     </tbody>
@@ -92,13 +92,13 @@
     
       <div class="source_files">
       
-        <div class="source_table" id="bee780950696a9e18929011fca22753e99ffe099">
+        <div class="source_table" id="554facd255550ac98428c91b82f0f1dd2b56a665">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./features/step_definitions/web_steps.rb</h3>
-        <h4><span class="red">35.25 %</span> covered</h4>
+        <h4><span class="green">100.0 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -474,15 +474,15 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="never" >
       <td class="line_number">
         <pre>29</pre>
       </td>
       <td>
-        <pre>    locator ? within(*selector_for(locator)) { yield } : yield</pre>
+        <pre>    </pre>
       </td>
       <td class="hits">
-        0
+        
       </td>
     </tr>
   
@@ -544,7 +544,7 @@
         <pre>34</pre>
       </td>
       <td>
-        <pre># Single-line step scoper</pre>
+        <pre></pre>
       </td>
       <td class="hits">
         
@@ -557,7 +557,7 @@
         <pre>35</pre>
       </td>
       <td>
-        <pre>When /^(.*) within (.*[^:])$/ do |step, parent|</pre>
+        <pre>Given /^(?:|I )am on (.+)$/ do |page_name|</pre>
       </td>
       <td class="hits">
         1
@@ -565,15 +565,15 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="15">
       <td class="line_number">
         <pre>36</pre>
       </td>
       <td>
-        <pre>  with_scope(parent) { When step }</pre>
+        <pre>  visit path_to(page_name)</pre>
       </td>
       <td class="hits">
-        0
+        15
       </td>
     </tr>
   
@@ -604,178 +604,9 @@
     </tr>
   
     
-    <tr class="never" >
+    <tr class="hit" data-hits="1">
       <td class="line_number">
         <pre>39</pre>
-      </td>
-      <td>
-        <pre># Multi-line step scoper</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>40</pre>
-      </td>
-      <td>
-        <pre>When /^(.*) within (.*[^:]):$/ do |step, parent, table_or_string|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>41</pre>
-      </td>
-      <td>
-        <pre>  with_scope(parent) { When &quot;#{step}:&quot;, table_or_string }</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>42</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>43</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>44</pre>
-      </td>
-      <td>
-        <pre>Given /^(?:|I )am on (.+)$/ do |page_name|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="15">
-      <td class="line_number">
-        <pre>45</pre>
-      </td>
-      <td>
-        <pre>  visit path_to(page_name)</pre>
-      </td>
-      <td class="hits">
-        15
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>46</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>47</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>48</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )go to (.+)$/ do |page_name|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>49</pre>
-      </td>
-      <td>
-        <pre>  visit path_to(page_name)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>50</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>51</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>52</pre>
       </td>
       <td>
         <pre>When /^(?:|I )press &quot;([^&quot;]*)&quot;$/ do |button|</pre>
@@ -788,7 +619,7 @@
     
     <tr class="hit" data-hits="19">
       <td class="line_number">
-        <pre>53</pre>
+        <pre>40</pre>
       </td>
       <td>
         <pre>  click_button(button)</pre>
@@ -801,7 +632,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>54</pre>
+        <pre>41</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -814,7 +645,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>55</pre>
+        <pre>42</pre>
       </td>
       <td>
         <pre></pre>
@@ -827,7 +658,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>56</pre>
+        <pre>43</pre>
       </td>
       <td>
         <pre>When /^(?:|I )follow &quot;([^&quot;]*)&quot;$/ do |link|</pre>
@@ -840,7 +671,7 @@
     
     <tr class="hit" data-hits="2">
       <td class="line_number">
-        <pre>57</pre>
+        <pre>44</pre>
       </td>
       <td>
         <pre>  click_link(link)</pre>
@@ -853,7 +684,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>58</pre>
+        <pre>45</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -866,7 +697,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>59</pre>
+        <pre>46</pre>
       </td>
       <td>
         <pre></pre>
@@ -879,7 +710,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>60</pre>
+        <pre>47</pre>
       </td>
       <td>
         <pre>When /^(?:|I )fill in &quot;([^&quot;]*)&quot; with &quot;([^&quot;]*)&quot;$/ do |field, value|</pre>
@@ -892,7 +723,7 @@
     
     <tr class="hit" data-hits="46">
       <td class="line_number">
-        <pre>61</pre>
+        <pre>48</pre>
       </td>
       <td>
         <pre>  fill_in(field, :with =&gt; value)</pre>
@@ -905,7 +736,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>62</pre>
+        <pre>49</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -918,7 +749,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>63</pre>
+        <pre>50</pre>
       </td>
       <td>
         <pre></pre>
@@ -931,10 +762,10 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>64</pre>
+        <pre>51</pre>
       </td>
       <td>
-        <pre>When /^(?:|I )fill in &quot;([^&quot;]*)&quot; for &quot;([^&quot;]*)&quot;$/ do |value, field|</pre>
+        <pre>Then /^(?:|I )should see &quot;([^&quot;]*)&quot;$/ do |text|</pre>
       </td>
       <td class="hits">
         1
@@ -942,15 +773,184 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="hit" data-hits="14">
+      <td class="line_number">
+        <pre>52</pre>
+      </td>
+      <td>
+        <pre>  if page.respond_to? :should</pre>
+      </td>
+      <td class="hits">
+        14
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="14">
+      <td class="line_number">
+        <pre>53</pre>
+      </td>
+      <td>
+        <pre>    page.should have_content(text)</pre>
+      </td>
+      <td class="hits">
+        14
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>54</pre>
+      </td>
+      <td>
+        <pre>  else</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>55</pre>
+      </td>
+      <td>
+        <pre>    </pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>56</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>57</pre>
+      </td>
+      <td>
+        <pre>end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>58</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>59</pre>
+      </td>
+      <td>
+        <pre>Then /^(?:|I )should be on (.+)$/ do |page_name|</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="21">
+      <td class="line_number">
+        <pre>60</pre>
+      </td>
+      <td>
+        <pre>  current_path = URI.parse(current_url).path</pre>
+      </td>
+      <td class="hits">
+        21
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="21">
+      <td class="line_number">
+        <pre>61</pre>
+      </td>
+      <td>
+        <pre>  if current_path.respond_to? :should</pre>
+      </td>
+      <td class="hits">
+        21
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="21">
+      <td class="line_number">
+        <pre>62</pre>
+      </td>
+      <td>
+        <pre>    current_path.should == path_to(page_name)</pre>
+      </td>
+      <td class="hits">
+        21
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>63</pre>
+      </td>
+      <td>
+        <pre>  else</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>64</pre>
+      </td>
+      <td>
+        <pre>  </pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
       <td class="line_number">
         <pre>65</pre>
       </td>
       <td>
-        <pre>  fill_in(field, :with =&gt; value)</pre>
+        <pre>  end</pre>
       </td>
       <td class="hits">
-        0
+        
       </td>
     </tr>
   
@@ -986,2425 +986,7 @@
         <pre>68</pre>
       </td>
       <td>
-        <pre># Use this to fill in an entire form with data from a table. Example:</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>69</pre>
-      </td>
-      <td>
-        <pre>#</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>70</pre>
-      </td>
-      <td>
-        <pre>#   When I fill in the following:</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>71</pre>
-      </td>
-      <td>
-        <pre>#     | Account Number | 5002       |</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>72</pre>
-      </td>
-      <td>
-        <pre>#     | Expiry date    | 2009-11-01 |</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>73</pre>
-      </td>
-      <td>
-        <pre>#     | Note           | Nice guy   |</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>74</pre>
-      </td>
-      <td>
-        <pre>#     | Wants Email?   |            |</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>75</pre>
-      </td>
-      <td>
-        <pre>#</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>76</pre>
-      </td>
-      <td>
-        <pre># TODO: Add support for checkbox, select or option</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>77</pre>
-      </td>
-      <td>
-        <pre># based on naming conventions.</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>78</pre>
-      </td>
-      <td>
-        <pre>#</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>79</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )fill in the following:$/ do |fields|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>80</pre>
-      </td>
-      <td>
-        <pre>  fields.rows_hash.each do |name, value|</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>81</pre>
-      </td>
-      <td>
-        <pre>    When %{I fill in &quot;#{name}&quot; with &quot;#{value}&quot;}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>82</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>83</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>84</pre>
-      </td>
-      <td>
         <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>85</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )select &quot;([^&quot;]*)&quot; from &quot;([^&quot;]*)&quot;$/ do |value, field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>86</pre>
-      </td>
-      <td>
-        <pre>  select(value, :from =&gt; field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>87</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>88</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>89</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )check &quot;([^&quot;]*)&quot;$/ do |field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>90</pre>
-      </td>
-      <td>
-        <pre>  check(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>91</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>92</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>93</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )uncheck &quot;([^&quot;]*)&quot;$/ do |field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>94</pre>
-      </td>
-      <td>
-        <pre>  uncheck(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>95</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>96</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>97</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )choose &quot;([^&quot;]*)&quot;$/ do |field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>98</pre>
-      </td>
-      <td>
-        <pre>  choose(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>99</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>100</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>101</pre>
-      </td>
-      <td>
-        <pre>When /^(?:|I )attach the file &quot;([^&quot;]*)&quot; to &quot;([^&quot;]*)&quot;$/ do |path, field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>102</pre>
-      </td>
-      <td>
-        <pre>  attach_file(field, File.expand_path(path))</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>103</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>104</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>105</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should see &quot;([^&quot;]*)&quot;$/ do |text|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="14">
-      <td class="line_number">
-        <pre>106</pre>
-      </td>
-      <td>
-        <pre>  if page.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        14
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="14">
-      <td class="line_number">
-        <pre>107</pre>
-      </td>
-      <td>
-        <pre>    page.should have_content(text)</pre>
-      </td>
-      <td class="hits">
-        14
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>108</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>109</pre>
-      </td>
-      <td>
-        <pre>    assert page.has_content?(text)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>110</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>111</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>112</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>113</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should see \/([^\/]*)\/$/ do |regexp|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>114</pre>
-      </td>
-      <td>
-        <pre>  regexp = Regexp.new(regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>115</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>116</pre>
-      </td>
-      <td>
-        <pre>  if page.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>117</pre>
-      </td>
-      <td>
-        <pre>    page.should have_xpath('//*', :text =&gt; regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>118</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>119</pre>
-      </td>
-      <td>
-        <pre>    assert page.has_xpath?('//*', :text =&gt; regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>120</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>121</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>122</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>123</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should not see &quot;([^&quot;]*)&quot;$/ do |text|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>124</pre>
-      </td>
-      <td>
-        <pre>  if page.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>125</pre>
-      </td>
-      <td>
-        <pre>    page.should have_no_content(text)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>126</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>127</pre>
-      </td>
-      <td>
-        <pre>    assert page.has_no_content?(text)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>128</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>129</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>130</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>131</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should not see \/([^\/]*)\/$/ do |regexp|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>132</pre>
-      </td>
-      <td>
-        <pre>  regexp = Regexp.new(regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>133</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>134</pre>
-      </td>
-      <td>
-        <pre>  if page.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>135</pre>
-      </td>
-      <td>
-        <pre>    page.should have_no_xpath('//*', :text =&gt; regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>136</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>137</pre>
-      </td>
-      <td>
-        <pre>    assert page.has_no_xpath?('//*', :text =&gt; regexp)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>138</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>139</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>140</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>141</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; field(?: within (.*))? should contain &quot;([^&quot;]*)&quot;$/ do |field, parent, value|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>142</pre>
-      </td>
-      <td>
-        <pre>  with_scope(parent) do</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>143</pre>
-      </td>
-      <td>
-        <pre>    field = find_field(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>144</pre>
-      </td>
-      <td>
-        <pre>    field_value = (field.tag_name == 'textarea') ? field.text : field.value</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>145</pre>
-      </td>
-      <td>
-        <pre>    if field_value.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>146</pre>
-      </td>
-      <td>
-        <pre>      field_value.should =~ /#{value}/</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>147</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>148</pre>
-      </td>
-      <td>
-        <pre>      assert_match(/#{value}/, field_value)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>149</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>150</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>151</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>152</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>153</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; field(?: within (.*))? should not contain &quot;([^&quot;]*)&quot;$/ do |field, parent, value|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>154</pre>
-      </td>
-      <td>
-        <pre>  with_scope(parent) do</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>155</pre>
-      </td>
-      <td>
-        <pre>    field = find_field(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>156</pre>
-      </td>
-      <td>
-        <pre>    field_value = (field.tag_name == 'textarea') ? field.text : field.value</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>157</pre>
-      </td>
-      <td>
-        <pre>    if field_value.respond_to? :should_not</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>158</pre>
-      </td>
-      <td>
-        <pre>      field_value.should_not =~ /#{value}/</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>159</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>160</pre>
-      </td>
-      <td>
-        <pre>      assert_no_match(/#{value}/, field_value)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>161</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>162</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>163</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>164</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>165</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; field should have the error &quot;([^&quot;]*)&quot;$/ do |field, error_message|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>166</pre>
-      </td>
-      <td>
-        <pre>  element = find_field(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>167</pre>
-      </td>
-      <td>
-        <pre>  classes = element.find(:xpath, '..')[:class].split(' ')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>168</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>169</pre>
-      </td>
-      <td>
-        <pre>  form_for_input = element.find(:xpath, 'ancestor::form[1]')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>170</pre>
-      </td>
-      <td>
-        <pre>  using_formtastic = form_for_input[:class].include?('formtastic')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>171</pre>
-      </td>
-      <td>
-        <pre>  error_class = using_formtastic ? 'error' : 'field_with_errors'</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>172</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>173</pre>
-      </td>
-      <td>
-        <pre>  if classes.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>174</pre>
-      </td>
-      <td>
-        <pre>    classes.should include(error_class)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>175</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>176</pre>
-      </td>
-      <td>
-        <pre>    assert classes.include?(error_class)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>177</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>178</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>179</pre>
-      </td>
-      <td>
-        <pre>  if page.respond_to?(:should)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>180</pre>
-      </td>
-      <td>
-        <pre>    if using_formtastic</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>181</pre>
-      </td>
-      <td>
-        <pre>      error_paragraph = element.find(:xpath, '../*[@class=&quot;inline-errors&quot;][1]')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>182</pre>
-      </td>
-      <td>
-        <pre>      error_paragraph.should have_content(error_message)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>183</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>184</pre>
-      </td>
-      <td>
-        <pre>      page.should have_content(&quot;#{field.titlecase} #{error_message}&quot;)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>185</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>186</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>187</pre>
-      </td>
-      <td>
-        <pre>    if using_formtastic</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>188</pre>
-      </td>
-      <td>
-        <pre>      error_paragraph = element.find(:xpath, '../*[@class=&quot;inline-errors&quot;][1]')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>189</pre>
-      </td>
-      <td>
-        <pre>      assert error_paragraph.has_content?(error_message)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>190</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>191</pre>
-      </td>
-      <td>
-        <pre>      assert page.has_content?(&quot;#{field.titlecase} #{error_message}&quot;)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>192</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>193</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>194</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>195</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>196</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; field should have no error$/ do |field|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>197</pre>
-      </td>
-      <td>
-        <pre>  element = find_field(field)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>198</pre>
-      </td>
-      <td>
-        <pre>  classes = element.find(:xpath, '..')[:class].split(' ')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>199</pre>
-      </td>
-      <td>
-        <pre>  if classes.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>200</pre>
-      </td>
-      <td>
-        <pre>    classes.should_not include('field_with_errors')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>201</pre>
-      </td>
-      <td>
-        <pre>    classes.should_not include('error')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>202</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>203</pre>
-      </td>
-      <td>
-        <pre>    assert !classes.include?('field_with_errors')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>204</pre>
-      </td>
-      <td>
-        <pre>    assert !classes.include?('error')</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>205</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>206</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>207</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>208</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; checkbox(?: within (.*))? should be checked$/ do |label, parent|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>209</pre>
-      </td>
-      <td>
-        <pre>  with_scope(parent) do</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>210</pre>
-      </td>
-      <td>
-        <pre>    field_checked = find_field(label)['checked']</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>211</pre>
-      </td>
-      <td>
-        <pre>    if field_checked.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>212</pre>
-      </td>
-      <td>
-        <pre>      field_checked.should be_true</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>213</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>214</pre>
-      </td>
-      <td>
-        <pre>      assert field_checked</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>215</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>216</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>217</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>218</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>219</pre>
-      </td>
-      <td>
-        <pre>Then /^the &quot;([^&quot;]*)&quot; checkbox(?: within (.*))? should not be checked$/ do |label, parent|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>220</pre>
-      </td>
-      <td>
-        <pre>  with_scope(parent) do</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>221</pre>
-      </td>
-      <td>
-        <pre>    field_checked = find_field(label)['checked']</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>222</pre>
-      </td>
-      <td>
-        <pre>    if field_checked.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>223</pre>
-      </td>
-      <td>
-        <pre>      field_checked.should be_false</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>224</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>225</pre>
-      </td>
-      <td>
-        <pre>      assert !field_checked</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>226</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>227</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>228</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>229</pre>
-      </td>
-      <td>
-        <pre> </pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>230</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should be on (.+)$/ do |page_name|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="21">
-      <td class="line_number">
-        <pre>231</pre>
-      </td>
-      <td>
-        <pre>  current_path = URI.parse(current_url).path</pre>
-      </td>
-      <td class="hits">
-        21
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="21">
-      <td class="line_number">
-        <pre>232</pre>
-      </td>
-      <td>
-        <pre>  if current_path.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        21
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="21">
-      <td class="line_number">
-        <pre>233</pre>
-      </td>
-      <td>
-        <pre>    current_path.should == path_to(page_name)</pre>
-      </td>
-      <td class="hits">
-        21
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>234</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>235</pre>
-      </td>
-      <td>
-        <pre>    assert_equal path_to(page_name), current_path</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>236</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>237</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>238</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>239</pre>
-      </td>
-      <td>
-        <pre>Then /^(?:|I )should have the following query string:$/ do |expected_pairs|</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>240</pre>
-      </td>
-      <td>
-        <pre>  query = URI.parse(current_url).query</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>241</pre>
-      </td>
-      <td>
-        <pre>  actual_params = query ? CGI.parse(query) : {}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>242</pre>
-      </td>
-      <td>
-        <pre>  expected_params = {}</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>243</pre>
-      </td>
-      <td>
-        <pre>  expected_pairs.rows_hash.each_pair{|k,v| expected_params[k] = v.split(',')} </pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>244</pre>
-      </td>
-      <td>
-        <pre>  </pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>245</pre>
-      </td>
-      <td>
-        <pre>  if actual_params.respond_to? :should</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>246</pre>
-      </td>
-      <td>
-        <pre>    actual_params.should == expected_params</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>247</pre>
-      </td>
-      <td>
-        <pre>  else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>248</pre>
-      </td>
-      <td>
-        <pre>    assert_equal expected_params, actual_params</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>249</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>250</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>251</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="1">
-      <td class="line_number">
-        <pre>252</pre>
-      </td>
-      <td>
-        <pre>Then /^show me the page$/ do</pre>
-      </td>
-      <td class="hits">
-        1
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>253</pre>
-      </td>
-      <td>
-        <pre>  save_and_open_page</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>254</pre>
-      </td>
-      <td>
-        <pre>end</pre>
       </td>
       <td class="hits">
         
@@ -3415,13 +997,13 @@
   </table>
 </div>
       
-        <div class="source_table" id="56075c11a4f9af39fd399f7a37d338e212f76bf6">
+        <div class="source_table" id="639231af4280d3804fec00e8dd37d8c8db3fd87d">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./features/support/paths.rb</h3>
-        <h4><span class="red">68.42 %</span> covered</h4>
+        <h4><span class="green">100.0 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -3945,123 +1527,6 @@
         <pre>40</pre>
       </td>
       <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>41</pre>
-      </td>
-      <td>
-        <pre>      begin</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>42</pre>
-      </td>
-      <td>
-        <pre>        page_name =~ /^the (.*) page$/</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>43</pre>
-      </td>
-      <td>
-        <pre>        path_components = $1.split(/\s+/)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>44</pre>
-      </td>
-      <td>
-        <pre>        self.send(path_components.push('path').join('_').to_sym)</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>45</pre>
-      </td>
-      <td>
-        <pre>      rescue NoMethodError, ArgumentError</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>46</pre>
-      </td>
-      <td>
-        <pre>        raise &quot;Can't find mapping from \&quot;#{page_name}\&quot; to a path.\n&quot; +</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>47</pre>
-      </td>
-      <td>
-        <pre>          &quot;Now, go and add a mapping in #{__FILE__}&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>48</pre>
-      </td>
-      <td>
-        <pre>      end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>49</pre>
-      </td>
-      <td>
         <pre>    end</pre>
       </td>
       <td class="hits">
@@ -4072,7 +1537,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>50</pre>
+        <pre>41</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4085,7 +1550,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>51</pre>
+        <pre>42</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -4098,7 +1563,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>52</pre>
+        <pre>43</pre>
       </td>
       <td>
         <pre></pre>
@@ -4111,7 +1576,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>53</pre>
+        <pre>44</pre>
       </td>
       <td>
         <pre>World(NavigationHelpers)</pre>
@@ -4125,13 +1590,13 @@
   </table>
 </div>
       
-        <div class="source_table" id="bf7b01bc994a645e0ef5e6a50349e48d19d542c8">
+        <div class="source_table" id="26b6faea8ef1a4fffdf5b3b9d240d78c15660e90">
   <table>
     <thead>
     <tr>
       <td colspan="3">
         <h3>./features/support/selectors.rb</h3>
-        <h4><span class="red">42.86 %</span> covered</h4>
+        <h4><span class="green">100.0 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -4312,15 +1777,15 @@
     </tr>
   
     
-    <tr class="miss" data-hits="0">
+    <tr class="never" >
       <td class="line_number">
         <pre>14</pre>
       </td>
       <td>
-        <pre>    case locator</pre>
+        <pre></pre>
       </td>
       <td class="hits">
-        0
+        
       </td>
     </tr>
   
@@ -4328,58 +1793,6 @@
     <tr class="never" >
       <td class="line_number">
         <pre>15</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>16</pre>
-      </td>
-      <td>
-        <pre>    when &quot;the page&quot;</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>17</pre>
-      </td>
-      <td>
-        <pre>      &quot;html &gt; body&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>18</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>19</pre>
       </td>
       <td>
         <pre>    # Add more mappings here.</pre>
@@ -4392,7 +1805,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>20</pre>
+        <pre>16</pre>
       </td>
       <td>
         <pre>    # Here is an example that pulls values out of the Regexp:</pre>
@@ -4405,7 +1818,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>21</pre>
+        <pre>17</pre>
       </td>
       <td>
         <pre>    #</pre>
@@ -4418,7 +1831,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>22</pre>
+        <pre>18</pre>
       </td>
       <td>
         <pre>    #  when /^the (notice|error|info) flash$/</pre>
@@ -4431,7 +1844,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>23</pre>
+        <pre>19</pre>
       </td>
       <td>
         <pre>    #    &quot;.flash.#{$1}&quot;</pre>
@@ -4444,7 +1857,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>24</pre>
+        <pre>20</pre>
       </td>
       <td>
         <pre></pre>
@@ -4457,7 +1870,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>25</pre>
+        <pre>21</pre>
       </td>
       <td>
         <pre>    # You can also return an array to use a different selector</pre>
@@ -4470,7 +1883,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>26</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre>    # type, like:</pre>
@@ -4483,7 +1896,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>27</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>    #</pre>
@@ -4496,7 +1909,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>28</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>    #  when /the header/</pre>
@@ -4509,7 +1922,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>29</pre>
+        <pre>25</pre>
       </td>
       <td>
         <pre>    #    [:xpath, &quot;//header&quot;]</pre>
@@ -4522,7 +1935,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>30</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre></pre>
@@ -4535,7 +1948,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>31</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>    # This allows you to provide a quoted selector as the scope</pre>
@@ -4548,7 +1961,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>32</pre>
+        <pre>28</pre>
       </td>
       <td>
         <pre>    # for &quot;within&quot; steps as was previously the default for the</pre>
@@ -4561,7 +1974,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>33</pre>
+        <pre>29</pre>
       </td>
       <td>
         <pre>    # web steps:</pre>
@@ -4574,36 +1987,10 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>34</pre>
+        <pre>30</pre>
       </td>
       <td>
-        <pre>    when /^&quot;(.+)&quot;$/</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>35</pre>
-      </td>
-      <td>
-        <pre>      $1</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>36</pre>
-      </td>
-      <td>
-        <pre></pre>
+        <pre>   </pre>
       </td>
       <td class="hits">
         
@@ -4613,59 +2000,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>37</pre>
-      </td>
-      <td>
-        <pre>    else</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>38</pre>
-      </td>
-      <td>
-        <pre>      raise &quot;Can't find mapping from \&quot;#{locator}\&quot; to a selector.\n&quot; +</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="miss" data-hits="0">
-      <td class="line_number">
-        <pre>39</pre>
-      </td>
-      <td>
-        <pre>        &quot;Now, go and add a mapping in #{__FILE__}&quot;</pre>
-      </td>
-      <td class="hits">
-        0
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>40</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>41</pre>
+        <pre>31</pre>
       </td>
       <td>
         <pre>  end</pre>
@@ -4678,7 +2013,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>42</pre>
+        <pre>32</pre>
       </td>
       <td>
         <pre>end</pre>
@@ -4691,7 +2026,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>43</pre>
+        <pre>33</pre>
       </td>
       <td>
         <pre></pre>
@@ -4704,7 +2039,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>44</pre>
+        <pre>34</pre>
       </td>
       <td>
         <pre>World(HtmlSelectorsHelpers)</pre>
