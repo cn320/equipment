@@ -6,6 +6,7 @@
       %th StudentName
       %th DeviceId
       %th DeviceName
+      %th Amount
       %th Date
       %th ToDate
       %th Recurring
@@ -16,6 +17,7 @@
         %td= s.stdname
         %td= s.dvid
         %td= s.dvname
+        %td= s.amount
         %td= s.date
         %td= s.todate
         %td=link_to "Recurring",equipment_recurritem_path(:id=>s.id,:vid=>s.dvid,:vname=>s.dvname)

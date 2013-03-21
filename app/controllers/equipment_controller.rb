@@ -64,11 +64,17 @@ class EquipmentController < ApplicationController
        :dvid =>params[:iddv],
        :dvname=>params[:namedv],
        :date=>Time.now,
-       :todate=>Time.now+(60*60*24*7)
-      if @borrow.save
-        flash[:borrow] = "Success"
-        @device.update_attribute(:remain,@device.remain-1)
-      end
+       :todate=>Time.now+(60*60*24*7),
+       :amount=>params[:dvamount]
+       if @borrow.amount>@device.remain
+          flash[:borrow] = "Fail"
+          @borrow.destroy
+       else
+          if @borrow.save
+          flash[:borrow] = "Success"
+          @device.update_attribute(:remain,@device.remain-@borrow.amount)
+          end
+       end
      else
        flash[:borrow] = "Fail"
      end
@@ -123,7 +129,7 @@ class EquipmentController < ApplicationController
   def recurritem
      @s = Student.find_by_id(params[:id])
      @device = Devioce.find_by_code_and_name(params[:vid],params[:vname])
-     @device.update_attribute(:remain,@device.remain+1) 
+     @device.update_attribute(:remain,@device.remain+@s.amount) 
      @s.update_attribute(:recalldate,Time.now)     
      flash[:os]="Success"
      redirect_to :action=>'recurring'

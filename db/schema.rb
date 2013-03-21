@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130314125503) do
+ActiveRecord::Schema.define(:version => 20130321181211) do
 
   create_table "devioces", :force => true do |t|
     t.string   "code"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(:version => 20130314125503) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "recalldate"
+    t.integer  "amount"
   end
 
 end

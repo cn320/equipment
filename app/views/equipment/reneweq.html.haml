@@ -6,9 +6,11 @@
       %th StudentName
       %th DeviceId
       %th DeviceName
+      %th Amount
       %th Date
       %th ToDate
       %th Renew
+
   %tbody
     - @students.each do |s|
       %tr
@@ -16,6 +18,7 @@
         %td= s.stdname
         %td= s.dvid
         %td= s.dvname
+        %td= s.amount
         %td= s.date
         %td= s.todate
         %td=link_to "Renew",equipment_retime_path(:id=>s.id)
