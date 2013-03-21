@@ -14,8 +14,23 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      '/'
-
+      '/equipment'
+    when /^the borrower\s?page$/
+      '/equipment/borrow'
+    when /^the login\s?page$/
+      '/equipment/login'  
+    when /^the add device\s?page$/
+      '/equipment/adddv'  
+    when /^the search\s?page$/
+      '/equipment/search' 
+    when /^the recurring\s?page$/
+      '/equipment/recurring'
+    when /^the return\s?page$/
+      '/equipment/recurr'
+    when /^the renewdevice\s?page$/
+      '/equipment/reneweq'
+    when /^the renew\s?page$/
+      '/equipment/renew'  
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
@@ -27,7 +42,7 @@ module NavigationHelpers
         page_name =~ /^the (.*) page$/
         path_components = $1.split(/\s+/)
         self.send(path_components.push('path').join('_').to_sym)
-      rescue Object => e
+      rescue NoMethodError, ArgumentError
         raise "Can't find mapping from \"#{page_name}\" to a path.\n" +
           "Now, go and add a mapping in #{__FILE__}"
       end

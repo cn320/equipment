@@ -6,6 +6,7 @@ gem 'rails', '3.2.11'
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
 group :development, :test do
+  gem 'simplecov'
   gem 'sqlite3'
   gem 'debugger'
   gem 'cucumber', ">= 1.1.9"
