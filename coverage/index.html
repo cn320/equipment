@@ -21,7 +21,7 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-21T23:50:54+07:00">2013-03-21T23:50:54+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-22T03:42:38+07:00">2013-03-22T03:42:38+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -32,9 +32,9 @@
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>3</b> files in total.
-    <b>38</b> relevant lines. 
-    <span class="green"><b>38</b> lines covered</span> and
+    <b>4</b> files in total.
+    <b>39</b> relevant lines. 
+    <span class="green"><b>39</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -51,6 +51,15 @@
     <tbody>
       
       <tr>
+        <td><a href="#a317bf51e416ec40ce8139f244890971fae65a32" class="src_link" title="./features/step_definitions/equipment_steps.rb">./features/step_definitions/equipment_steps.rb</a></td>
+        <td class="green">100.0 %</td>
+        <td>6</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+      </tr>
+      
+      <tr>
         <td><a href="#554facd255550ac98428c91b82f0f1dd2b56a665" class="src_link" title="./features/step_definitions/web_steps.rb">./features/step_definitions/web_steps.rb</a></td>
         <td class="green">100.0 %</td>
         <td>68</td>
@@ -62,9 +71,9 @@
       <tr>
         <td><a href="#639231af4280d3804fec00e8dd37d8c8db3fd87d" class="src_link" title="./features/support/paths.rb">./features/support/paths.rb</a></td>
         <td class="green">100.0 %</td>
-        <td>44</td>
-        <td>13</td>
-        <td>13</td>
+        <td>40</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
       </tr>
       
@@ -91,6 +100,105 @@
       </div>
     
       <div class="source_files">
+      
+        <div class="source_table" id="a317bf51e416ec40ce8139f244890971fae65a32">
+  <table>
+    <thead>
+    <tr>
+      <td colspan="3">
+        <h3>./features/step_definitions/equipment_steps.rb</h3>
+        <h4><span class="green">100.0 %</span> covered</h4>
+      </td>
+    </tr>
+    <tr>
+      <th>#</th>
+      <th></th>
+      <th>Hits</th>
+    </tr>
+    </thead>
+    <tbody>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>1</pre>
+      </td>
+      <td>
+        <pre>Given /the following devices exist/ do |devices_table|</pre>
+      </td>
+      <td class="hits">
+        1
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="8">
+      <td class="line_number">
+        <pre>2</pre>
+      </td>
+      <td>
+        <pre>  devices_table.hashes.each do |device|</pre>
+      </td>
+      <td class="hits">
+        8
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="16">
+      <td class="line_number">
+        <pre>3</pre>
+      </td>
+      <td>
+        <pre>    Devioce.create!(device)</pre>
+      </td>
+      <td class="hits">
+        16
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>4</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>5</pre>
+      </td>
+      <td>
+        <pre>end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>6</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    </tbody>
+  </table>
+</div>
       
         <div class="source_table" id="554facd255550ac98428c91b82f0f1dd2b56a665">
   <table>
@@ -565,7 +673,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="15">
+    <tr class="hit" data-hits="11">
       <td class="line_number">
         <pre>36</pre>
       </td>
@@ -573,7 +681,7 @@
         <pre>  visit path_to(page_name)</pre>
       </td>
       <td class="hits">
-        15
+        11
       </td>
     </tr>
   
@@ -617,7 +725,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="19">
+    <tr class="hit" data-hits="11">
       <td class="line_number">
         <pre>40</pre>
       </td>
@@ -625,7 +733,7 @@
         <pre>  click_button(button)</pre>
       </td>
       <td class="hits">
-        19
+        11
       </td>
     </tr>
   
@@ -721,7 +829,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="46">
+    <tr class="hit" data-hits="31">
       <td class="line_number">
         <pre>48</pre>
       </td>
@@ -729,7 +837,7 @@
         <pre>  fill_in(field, :with =&gt; value)</pre>
       </td>
       <td class="hits">
-        46
+        31
       </td>
     </tr>
   
@@ -773,7 +881,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="14">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>52</pre>
       </td>
@@ -781,12 +889,12 @@
         <pre>  if page.respond_to? :should</pre>
       </td>
       <td class="hits">
-        14
+        10
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="14">
+    <tr class="hit" data-hits="10">
       <td class="line_number">
         <pre>53</pre>
       </td>
@@ -794,7 +902,7 @@
         <pre>    page.should have_content(text)</pre>
       </td>
       <td class="hits">
-        14
+        10
       </td>
     </tr>
   
@@ -877,7 +985,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="21">
+    <tr class="hit" data-hits="13">
       <td class="line_number">
         <pre>60</pre>
       </td>
@@ -885,12 +993,12 @@
         <pre>  current_path = URI.parse(current_url).path</pre>
       </td>
       <td class="hits">
-        21
+        13
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="21">
+    <tr class="hit" data-hits="13">
       <td class="line_number">
         <pre>61</pre>
       </td>
@@ -898,12 +1006,12 @@
         <pre>  if current_path.respond_to? :should</pre>
       </td>
       <td class="hits">
-        21
+        13
       </td>
     </tr>
   
     
-    <tr class="hit" data-hits="21">
+    <tr class="hit" data-hits="13">
       <td class="line_number">
         <pre>62</pre>
       </td>
@@ -911,7 +1019,7 @@
         <pre>    current_path.should == path_to(page_name)</pre>
       </td>
       <td class="hits">
-        21
+        13
       </td>
     </tr>
   
@@ -1184,7 +1292,7 @@
     </tr>
   
     
-    <tr class="hit" data-hits="36">
+    <tr class="hit" data-hits="24">
       <td class="line_number">
         <pre>14</pre>
       </td>
@@ -1192,7 +1300,7 @@
         <pre>    case page_name</pre>
       </td>
       <td class="hits">
-        36
+        24
       </td>
     </tr>
   
@@ -1267,58 +1375,6 @@
         <pre>20</pre>
       </td>
       <td>
-        <pre>    when /^the login\s?page$/</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="4">
-      <td class="line_number">
-        <pre>21</pre>
-      </td>
-      <td>
-        <pre>      '/equipment/login'  </pre>
-      </td>
-      <td class="hits">
-        4
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>22</pre>
-      </td>
-      <td>
-        <pre>    when /^the add device\s?page$/</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="hit" data-hits="8">
-      <td class="line_number">
-        <pre>23</pre>
-      </td>
-      <td>
-        <pre>      '/equipment/adddv'  </pre>
-      </td>
-      <td class="hits">
-        8
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>24</pre>
-      </td>
-      <td>
         <pre>    when /^the search\s?page$/</pre>
       </td>
       <td class="hits">
@@ -1329,7 +1385,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>25</pre>
+        <pre>21</pre>
       </td>
       <td>
         <pre>      '/equipment/search' </pre>
@@ -1342,7 +1398,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>26</pre>
+        <pre>22</pre>
       </td>
       <td>
         <pre>    when /^the recurring\s?page$/</pre>
@@ -1355,7 +1411,7 @@
     
     <tr class="hit" data-hits="4">
       <td class="line_number">
-        <pre>27</pre>
+        <pre>23</pre>
       </td>
       <td>
         <pre>      '/equipment/recurring'</pre>
@@ -1368,7 +1424,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>28</pre>
+        <pre>24</pre>
       </td>
       <td>
         <pre>    when /^the return\s?page$/</pre>
@@ -1381,7 +1437,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>29</pre>
+        <pre>25</pre>
       </td>
       <td>
         <pre>      '/equipment/recurr'</pre>
@@ -1394,7 +1450,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>30</pre>
+        <pre>26</pre>
       </td>
       <td>
         <pre>    when /^the renewdevice\s?page$/</pre>
@@ -1407,7 +1463,7 @@
     
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>31</pre>
+        <pre>27</pre>
       </td>
       <td>
         <pre>      '/equipment/reneweq'</pre>
@@ -1420,7 +1476,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>32</pre>
+        <pre>28</pre>
       </td>
       <td>
         <pre>    when /^the renew\s?page$/</pre>
@@ -1433,7 +1489,7 @@
     
     <tr class="hit" data-hits="4">
       <td class="line_number">
-        <pre>33</pre>
+        <pre>29</pre>
       </td>
       <td>
         <pre>      '/equipment/renew'  </pre>
@@ -1446,7 +1502,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>34</pre>
+        <pre>30</pre>
       </td>
       <td>
         <pre>    # Add more mappings here.</pre>
@@ -1459,7 +1515,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>35</pre>
+        <pre>31</pre>
       </td>
       <td>
         <pre>    # Here is an example that pulls values out of the Regexp:</pre>
@@ -1472,7 +1528,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>36</pre>
+        <pre>32</pre>
       </td>
       <td>
         <pre>    #</pre>
@@ -1485,7 +1541,7 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>37</pre>
+        <pre>33</pre>
       </td>
       <td>
         <pre>    #   when /^(.*)'s profile page$/i</pre>
@@ -1498,10 +1554,62 @@
     
     <tr class="never" >
       <td class="line_number">
-        <pre>38</pre>
+        <pre>34</pre>
       </td>
       <td>
         <pre>    #     user_profile_path(User.find_by_login($1))</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>35</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>36</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>37</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>38</pre>
+      </td>
+      <td>
+        <pre>end</pre>
       </td>
       <td class="hits">
         
@@ -1522,61 +1630,9 @@
     </tr>
   
     
-    <tr class="never" >
-      <td class="line_number">
-        <pre>40</pre>
-      </td>
-      <td>
-        <pre>    end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>41</pre>
-      </td>
-      <td>
-        <pre>  end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>42</pre>
-      </td>
-      <td>
-        <pre>end</pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
-    <tr class="never" >
-      <td class="line_number">
-        <pre>43</pre>
-      </td>
-      <td>
-        <pre></pre>
-      </td>
-      <td class="hits">
-        
-      </td>
-    </tr>
-  
-    
     <tr class="hit" data-hits="1">
       <td class="line_number">
-        <pre>44</pre>
+        <pre>40</pre>
       </td>
       <td>
         <pre>World(NavigationHelpers)</pre>

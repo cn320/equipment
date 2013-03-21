@@ -3,3 +3,4 @@ Given /the following devices exist/ do |devices_table|
     Devioce.create!(device)
   end
 end
+

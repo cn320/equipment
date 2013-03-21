@@ -17,10 +17,6 @@ module NavigationHelpers
       '/equipment'
     when /^the borrower\s?page$/
       '/equipment/borrow'
-    when /^the login\s?page$/
-      '/equipment/login'  
-    when /^the add device\s?page$/
-      '/equipment/adddv'  
     when /^the search\s?page$/
       '/equipment/search' 
     when /^the recurring\s?page$/
