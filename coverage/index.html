@@ -21,21 +21,21 @@
       <img src="./assets/0.4.5/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-22T03:42:38+07:00">2013-03-22T03:42:38+07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-03-22T19:42:50+07:00">2013-03-22T19:42:50+07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     All Files
-    (<span class="green">100.0%</span>)
+    (<span class="green">95.12%</span>)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>39</b> relevant lines. 
+    <b>41</b> relevant lines. 
     <span class="green"><b>39</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed </span>
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -70,11 +70,11 @@
       
       <tr>
         <td><a href="#639231af4280d3804fec00e8dd37d8c8db3fd87d" class="src_link" title="./features/support/paths.rb">./features/support/paths.rb</a></td>
-        <td class="green">100.0 %</td>
-        <td>40</td>
+        <td class="yellow">84.62 %</td>
+        <td>44</td>
+        <td>13</td>
         <td>11</td>
-        <td>11</td>
-        <td>0</td>
+        <td>2</td>
       </tr>
       
       <tr>
@@ -1111,7 +1111,7 @@
     <tr>
       <td colspan="3">
         <h3>./features/support/paths.rb</h3>
-        <h4><span class="green">100.0 %</span> covered</h4>
+        <h4><span class="yellow">84.62 %</span> covered</h4>
       </td>
     </tr>
     <tr>
@@ -1505,7 +1505,7 @@
         <pre>30</pre>
       </td>
       <td>
-        <pre>    # Add more mappings here.</pre>
+        <pre>    when /^the login\s?page$/</pre>
       </td>
       <td class="hits">
         
@@ -1513,15 +1513,15 @@
     </tr>
   
     
-    <tr class="never" >
+    <tr class="miss" data-hits="0">
       <td class="line_number">
         <pre>31</pre>
       </td>
       <td>
-        <pre>    # Here is an example that pulls values out of the Regexp:</pre>
+        <pre>      '/equipment/login'</pre>
       </td>
       <td class="hits">
-        
+        0
       </td>
     </tr>
   
@@ -1531,7 +1531,7 @@
         <pre>32</pre>
       </td>
       <td>
-        <pre>    #</pre>
+        <pre>    when /^the adddevice\s?page$/</pre>
       </td>
       <td class="hits">
         
@@ -1539,15 +1539,15 @@
     </tr>
   
     
-    <tr class="never" >
+    <tr class="miss" data-hits="0">
       <td class="line_number">
         <pre>33</pre>
       </td>
       <td>
-        <pre>    #   when /^(.*)'s profile page$/i</pre>
+        <pre>      '/equipment/adddv'</pre>
       </td>
       <td class="hits">
-        
+        0
       </td>
     </tr>
   
@@ -1557,7 +1557,7 @@
         <pre>34</pre>
       </td>
       <td>
-        <pre>    #     user_profile_path(User.find_by_login($1))</pre>
+        <pre>    # Add more mappings here.</pre>
       </td>
       <td class="hits">
         
@@ -1570,7 +1570,7 @@
         <pre>35</pre>
       </td>
       <td>
-        <pre></pre>
+        <pre>    # Here is an example that pulls values out of the Regexp:</pre>
       </td>
       <td class="hits">
         
@@ -1583,7 +1583,7 @@
         <pre>36</pre>
       </td>
       <td>
-        <pre>    end</pre>
+        <pre>    #</pre>
       </td>
       <td class="hits">
         
@@ -1596,7 +1596,7 @@
         <pre>37</pre>
       </td>
       <td>
-        <pre>  end</pre>
+        <pre>    #   when /^(.*)'s profile page$/i</pre>
       </td>
       <td class="hits">
         
@@ -1609,7 +1609,7 @@
         <pre>38</pre>
       </td>
       <td>
-        <pre>end</pre>
+        <pre>    #     user_profile_path(User.find_by_login($1))</pre>
       </td>
       <td class="hits">
         
@@ -1630,9 +1630,61 @@
     </tr>
   
     
-    <tr class="hit" data-hits="1">
+    <tr class="never" >
       <td class="line_number">
         <pre>40</pre>
+      </td>
+      <td>
+        <pre>    end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>41</pre>
+      </td>
+      <td>
+        <pre>  end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>42</pre>
+      </td>
+      <td>
+        <pre>end</pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="never" >
+      <td class="line_number">
+        <pre>43</pre>
+      </td>
+      <td>
+        <pre></pre>
+      </td>
+      <td class="hits">
+        
+      </td>
+    </tr>
+  
+    
+    <tr class="hit" data-hits="1">
+      <td class="line_number">
+        <pre>44</pre>
       </td>
       <td>
         <pre>World(NavigationHelpers)</pre>

@@ -27,6 +27,10 @@ module NavigationHelpers
       '/equipment/reneweq'
     when /^the renew\s?page$/
       '/equipment/renew'  
+    when /^the login\s?page$/
+      '/equipment/login'
+    when /^the adddevice\s?page$/
+      '/equipment/adddv'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #
