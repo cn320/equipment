@@ -12,7 +12,7 @@ Background: devioces in database
 
 
 
-Scenario:Borrow Device to existing equipment
+Scenario:Borrow Device
    Given I am on the borrower page
    When I fill in "stdidd" with "5310611115"
    And I fill in "stdnamee" with "nook"
@@ -23,7 +23,7 @@ Scenario:Borrow Device to existing equipment
    Then I should be on the borrower page
    And I should see "Success"
 
-Scenario: Don't have Device Borrow Device Fail  to existing equipment
+Scenario: Don't have device can't be borrowed
    Given I am on the borrower page
    When I fill in "stdidd" with "5310611115"
    And I fill in "stdnamee" with "nook"

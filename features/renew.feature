@@ -11,7 +11,7 @@ Background: devioces in database
    | 340  | arduino   | 20     |
 
 
-Scenario:Borrow Device and Renew timefinishBorrow to existing equipment
+Scenario:Borrow Device and Renew timefinishBorrow 
    Given I am on the borrower page
    When I fill in "stdidd" with "5310611115"
    And I fill in "stdnamee" with "nook"
@@ -29,7 +29,7 @@ Scenario:Borrow Device and Renew timefinishBorrow to existing equipment
    Then I should be on the renew page
    And I should see "Success"
 
-Scenario: can't find student renew with studentID
+Scenario: Can't find student renew with studentID
   Given I am on the renew page
   When I fill in "idstd" with "5310611321"
   And I press "Search"
