@@ -1,7 +1,7 @@
 ---
 Cucumber Features:
   :original_result:
-    /home/cn/old/project/features/support/paths.rb:
+    /home/cn/new/project/features/support/paths.rb:
     - 
     - 
     - 
@@ -15,7 +15,7 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 24
+    - 27
     - 
     - 
     - 3
@@ -32,9 +32,9 @@ Cucumber Features:
     - 
     - 4
     - 
-    - 0
+    - 1
     - 
-    - 0
+    - 2
     - 
     - 
     - 
@@ -46,14 +46,7 @@ Cucumber Features:
     - 
     - 
     - 1
-    /home/cn/old/project/features/support/selectors.rb:
-    - 
-    - 
-    - 
-    - 
-    - 
-    - 1
-    - 
+    /home/cn/new/project/features/support/selectors.rb:
     - 
     - 
     - 
@@ -66,6 +59,13 @@ Cucumber Features:
     - 
     - 
     - 
+    - 1
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
     - 
     - 
     - 
@@ -81,14 +81,14 @@ Cucumber Features:
     - 
     - 
     - 1
-    /home/cn/old/project/features/step_definitions/equipment_steps.rb:
+    /home/cn/new/project/features/step_definitions/equipment_steps.rb:
     - 1
     - 8
     - 16
     - 
     - 
     - 
-    /home/cn/old/project/features/step_definitions/web_steps.rb:
+    /home/cn/new/project/features/step_definitions/web_steps.rb:
     - 
     - 
     - 
@@ -124,11 +124,11 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 11
+    - 14
     - 
     - 
     - 1
-    - 11
+    - 13
     - 
     - 
     - 1
@@ -136,12 +136,12 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 31
+    - 36
     - 
     - 
     - 1
-    - 10
-    - 10
+    - 11
+    - 11
     - 
     - 
     - 
@@ -157,4 +157,4 @@ Cucumber Features:
     - 
     - 
     - 
-  :created_at: 2013-03-22 19:58:01.650184851 +07:00
+  :created_at: 2013-03-24 15:26:54.116113274 +07:00

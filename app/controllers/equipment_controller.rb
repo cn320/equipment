@@ -7,6 +7,8 @@ class EquipmentController < ApplicationController
   def about
 
   end
+  def poster
+  end
   def recurring
   
   end
