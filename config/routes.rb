@@ -20,6 +20,7 @@ Equipmentroom::Application.routes.draw do
   match 'equipment/deletestudent'
   match 'equipment/editdv'
   match 'equipment/updatedv'
+  match 'equipment/poster'
   resources :equipment
 
   # The priority is based upon order of creation:
