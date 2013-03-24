@@ -31,6 +31,10 @@ module NavigationHelpers
       '/equipment/login'
     when /^the adddevice\s?page$/
       '/equipment/adddv'
+    when /^the showdevices\s?page$/
+      '/equipment/devices'
+    when /^the edit\s?page$/
+      '/equipment/editdv?id=1?'
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

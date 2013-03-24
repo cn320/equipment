@@ -15,7 +15,7 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 27
+    - 29
     - 
     - 
     - 3
@@ -32,9 +32,11 @@ Cucumber Features:
     - 
     - 4
     - 
-    - 1
+    - 2
     - 
     - 2
+    - 
+    - 1
     - 
     - 
     - 
@@ -83,8 +85,8 @@ Cucumber Features:
     - 1
     /home/cn/new/project/features/step_definitions/equipment_steps.rb:
     - 1
-    - 8
-    - 16
+    - 9
+    - 17
     - 
     - 
     - 
@@ -124,11 +126,11 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 14
+    - 16
     - 
     - 
     - 1
-    - 13
+    - 14
     - 
     - 
     - 1
@@ -136,7 +138,7 @@ Cucumber Features:
     - 
     - 
     - 1
-    - 36
+    - 38
     - 
     - 
     - 1
@@ -157,4 +159,4 @@ Cucumber Features:
     - 
     - 
     - 
-  :created_at: 2013-03-24 15:26:54.116113274 +07:00
+  :created_at: 2013-03-24 15:50:50.528792292 +07:00
